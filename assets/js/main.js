@@ -75,7 +75,7 @@ function loadSkillsHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://raw.githubusercontent.com/akndmr/project0/master/rest/skills.html?token=AO6sk0tdsGlABBLHvXn4tHICq45VRX08ks5ZwD8DwA%3D%3D", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/b867c3db66c0a835950ea4db9cdfd831/raw/ffc887a8a5b4364df4285d141488a5fd8532c416/skills.html", true);
   xmlhttp.send();
 }
 

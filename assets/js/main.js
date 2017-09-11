@@ -58,7 +58,7 @@ function loadEducationHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://git.io/v51wJ", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/e860aae9dc9eb462aac007934a811fac/raw/3f8b09633d480d1299ea56ae681927290b752ff7/education.html", true);
   xmlhttp.send();
 }
 

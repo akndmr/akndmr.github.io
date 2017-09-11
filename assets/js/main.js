@@ -23,7 +23,7 @@ function loadExperiencesHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://raw.githubusercontent.com/akndmr/project0/master/rest/experiences.html?token=AO6sk3uNf2OUKeJ9H2ssMW_EefaU-gfCks5ZwDwxwA%3D%3D", true);
+  xmlhttp.open("GET", "https://git.io/v51wq", true);
   xmlhttp.send();
 }
 

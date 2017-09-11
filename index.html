@@ -6,14 +6,17 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Akın DEMİR</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		
 	</head>
 	<body class="is-loading">
 
@@ -23,47 +26,84 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" width="150" height="150"/></span>
 							<h1>Akın DEMİR</h1>
 							<p>Computer Engineer</p>
 						</header>
 						
-						<hr />
+						<hr style="margin:0px;"/>
 						
-						<ul class="iconTitle">
-								<li><a href="#" >Experience</a></li>
-								<li><a href="#" >Projects</a></li>
-								<li><a href="#" >Education</a></li>								
-								<li><a href="#" >Skills</a></li>
-								<li><a href="#" >Hobbies</a></li>
-								<li><a href="#" >Contact</a></li>
-							</ul>
+						<!-- Modal window -->
+						<div class="modal">
+						  <div class="modal__box">
+							<p>I am a modal! </p>
+							<p>Click anywhere to close me!</p>
+						  </div>
+						</div>	
 						
-							<ul class="icons">
-								<li><a href="#" class="fa-briefcase">Experience</a></li>
-								<li><a href="#" class="fa-cubes">Projects</a></li>
-								<li><a href="#" class="fa-graduation-cap">Education</a></li>								
-								<li><a href="#" class="fa-instagram">Skills</a></li>
-								<li><a href="#" class="fa-facebook">Hobbies</a></li>
-								<li><a href="#" class="fa-facebook">Contact</a></li>
-							</ul>
+						<!-- List of pages -->
+						<ul class="main-menu-list">
+						  <li class="main-menu">
+							<a href="#" onclick="loadExperiencesHTML()">
+								<span class="fa fa-briefcase fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Experience</span>
+							</a>
+						  </li>
 						
+						  <li class="main-menu">
+							<a href="#" onclick="loadProjectsHTML()">
+								<span class="fa fa-cubes fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Projects</span>
+							</a>
+						  </li>
+						  
+						  <li class="main-menu">
+							<a href="#" onclick="loadEducationHTML()">
+								<span class="fa fa-graduation-cap fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Education</span>
+							</a>
+						  </li>
+						  
+						  <li class="main-menu">
+							<a href="#about" onclick="loadSkillsHTML()">
+								<span class="fa fa-puzzle-piece fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Skills</span>
+							</a>
+						  </li>
+						  
+						  <li class="main-menu">
+							<a href="#about" onclick="loadHobbiesHTML()">
+								<span class="fa fa-heart fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Hobbies</span>
+							</a>
+						  </li>
+						  
+						  <li class="main-menu">
+							<a href="#" onclick="loadFormHTML()">
+								<span class="fa fa-envelope fa-fw fa-pull-left line-height-25"></span>
+									<span class="line-height-25">Contact</span>
+							</a>
+						  </li>
+						</ul>						
 						
-						<hr />
+						<hr style="margin-top:0px; margin-bottom:15px" />
+						
+						<!-- Footer links -->
 						<footer>
 							<ul class="icons">
-								<li><a href="#" class="fa-twitter">Twitter</a></li>
-								<li><a href="#" class="fa-instagram">Instagram</a></li>
-								<li><a href="#" class="fa-facebook">Facebook</a></li>
+								<li><a href="https://github.com/akndmr" target="_blank" class="fa-github">Github</a></li>
+								<li><a href="https://www.linkedin.com/in/akndmr" target="_blank" class="fa-linkedin">LinkedIn</a></li>
+								<li><a href="#" class="fa-android">Google Play</a></li>
 							</ul>
+							<button class="button" > Download Resume</button>
 						</footer>
 					</section>
 
-				<!-- Footer -->
+				<!-- Copyright -->
 					<footer id="footer">
 						<ul class="copyright">
 							<li>2017 &copy; Akın DEMİR</li>
-						</ul>
+						</ul>						
 					</footer>
 
 			</div>

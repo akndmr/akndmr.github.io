@@ -40,7 +40,7 @@ function loadProjectsHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://raw.githubusercontent.com/akndmr/project0/master/rest/projects.html?token=AO6sk9zWm9PNMxPwzQVda05PQ7h58k_yks5ZwD7uwA%3D%3D", true);
+  xmlhttp.open("GET", "https://raw.githubusercontent.com/akndmr/project0/master/rest/projects.html?token=AO6sk5nE16Yc3_Ghtc95B5TCrAqB2cSVks5ZwFBnwA%3D%3D", true);
   xmlhttp.send();
 }
 

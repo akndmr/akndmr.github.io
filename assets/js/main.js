@@ -23,7 +23,7 @@ function loadExperiencesHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://git.io/v51wq", true);
+  xmlhttp.open("GET", "experiences.html", true);
   xmlhttp.send();
 }
 

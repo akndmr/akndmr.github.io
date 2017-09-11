@@ -58,7 +58,7 @@ function loadEducationHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://raw.githubusercontent.com/akndmr/project0/master/rest/education.html?token=AO6sk1G8ze7NAQrtwzJYqVPF9UWqhmgvks5ZwD6hwA%3D%3D", true);
+  xmlhttp.open("GET", "https://git.io/v51wJ", true);
   xmlhttp.send();
 }
 

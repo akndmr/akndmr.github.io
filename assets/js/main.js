@@ -40,7 +40,7 @@ function loadProjectsHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://git.io/v51VQ", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/2f89333cd2be5c96b9ca36182aac4401/raw/5bf24cf83144d084cbf461609f5cdb013c1db590/projects.html", true);
   xmlhttp.send();
 }
 

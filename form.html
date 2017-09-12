@@ -7,13 +7,26 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	  $('#gform *').fadeOut(2000);
+	  $('#gform').prepend('Your submission has been processed...');
+	  });
+	</script>
 </head>
 <div id="main-container">
 	<!-- Close button - top right corner -->
 	<a href="index.html" id="x-button">X</a>
 
 	<h2>I will respond your message as soon as possible!</h2>
-	<form method="post" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScCmJyKkPuNOCePprMXrqEYctvIVs-RzsoDy74gCcTkejUA8w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+	<form id="gform" method="post" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScCmJyKkPuNOCePprMXrqEYctvIVs-RzsoDy74gCcTkejUA8w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 		<div class="field">
 			<input type="text" name="entry.118133635" id="entry.118133635" placeholder="Name" required/>
 		</div>
@@ -30,4 +43,6 @@
 			<input type="submit" class="button" value="Let it fly!">
 		</ul>
 	</form>
+	
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div>	

@@ -24,10 +24,11 @@
 		    data: $form.serializeObject()
 		  }).success(
 		    popUpMsg();
+			  alert('TAMAMLANDI');
 		  );
 		})
 		
-		$( function popUpMsg() {
+		function popUpMsg() {
 		    $( "#dialog-message" ).dialog({
 		      modal: true,
 		      buttons: {
@@ -36,7 +37,7 @@
 			}
 		      }
 		    });
-		  } );
+		}
 		
 	</script>
 	

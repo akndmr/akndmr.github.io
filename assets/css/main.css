@@ -1084,7 +1084,7 @@ li.main-menu a:hover:not(.active) {
 
 #main-container{
 	display:block;
-	width:640px;
+	max-width:640px;
 }
 
 .experience-container{
@@ -1255,4 +1255,36 @@ a span.icon-center{
 	border:0;
 	outline:none;
 	text-decoration:none;
+}
+
+
+
+
+
+/*********************** RESPONSIVE ******************/
+@media screen and (max-width: 400px) {
+    .project-image-field{
+    	display:block;
+    	max-width:400px;
+    	text-align:center;
+    	margin:auto;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 640px) {
+    .project-image-field{
+    	display:block;
+    	max-width:620px;
+    	text-align:center;
+    	margin:auto;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .project-image-field{
+    	display:block;
+    	max-width:640px;
+    	text-align:center;
+    	margin:auto;
+    }
 }

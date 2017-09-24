@@ -1137,7 +1137,7 @@ a span.icon-center{
 
 #project-main-container{
 		display:block;
-		max-width:720px;
+		max-width:640px;
 }
 
 .project-container{
@@ -1180,19 +1180,6 @@ a span.icon-center{
 	letter-spacing:0pt;
 }
 
-.skill-pro{
-	background-color:#ecf0f1;
-	border-radius:5px;
-	padding: 2px 6px 2px 6px;
-	color:#7f8c8d !important;
-	display:inline-block;
-	margin-top:4px;
-}
-
-.skill-exp{
-	
-}
-
 .double-size{
 	padding: 4px 10px 4px 10px;
 }
@@ -1210,6 +1197,14 @@ a span.icon-center{
 
 /***************** SKILLS  */
 
+.skill-pro{
+	background-color:#ecf0f1;
+	border-radius:5px;
+	padding: 2px 6px 2px 6px;
+	color:#7f8c8d !important;
+	display:inline-block;
+	margin-top:4px;
+}
 
 .skill-ul {
   list-style:none;
@@ -1225,7 +1220,7 @@ a span.icon-center{
 
 /*float layout*/
 .skill-float {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0 auto;
 }
 .skill-float:after {
@@ -1262,6 +1257,13 @@ a span.icon-center{
 
 
 /*********************** RESPONSIVE ******************/
+@media screen and (max-width: 400px){
+	/*float layout*/
+	.skill-float {
+	  max-width: 400px;
+	}
+}
+
 @media screen and (max-width: 400px) {
     .project-image-field{
     	display:block;

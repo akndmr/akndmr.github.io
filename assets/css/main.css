@@ -1151,6 +1151,10 @@ a span.icon-center{
 	margin:auto;
 }
 
+.project-image-field img{
+	width:90%;
+}
+
 .rounded-image{
 	margin:0;
 	padding:0;

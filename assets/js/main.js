@@ -92,7 +92,7 @@ function loadHobbiesHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/8424cca81c216914eb7ad35d3e2400f7/raw/b829f9e726905119fa7d828e54fa88cf4f16e93f/hobbies.html", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/8424cca81c216914eb7ad35d3e2400f7/raw/95bcd0b03887c0581931d9c6796503bc35d737c8/hobbies.html", true);
   xmlhttp.send();
 }
 

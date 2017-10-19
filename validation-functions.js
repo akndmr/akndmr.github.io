@@ -74,10 +74,13 @@ $(document).ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         // Use Ajax to submit form data
-        var url = 'https://script.google.com/macros/s/AKfycbx62O8H_mngvRVx8ITBWWburl3hquIevHUGC-tXoRVIvWfyUX76/exec';
+        var url = 'https://script.google.com/macros/u/0/s/AKfycbyZUL4zVxjKRRXiemn62gr8cI4f7rGzIsNTYnu11eou19kepS4/exec';
         var redirectUrl = 'test-success-page.html';
         // show the loading 
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+        
+        
+        
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
             $(location).attr('href',redirectUrl);

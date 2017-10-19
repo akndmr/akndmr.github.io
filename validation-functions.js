@@ -1,75 +1,94 @@
-// original from: http://mashe.hawksey.info/2014/07/google-sheets-as-a-database-insert-with-apps-script-using-postget-methods-with-ajax-example/
+$(document).ready(function() {
+    $('#test-form').bootstrapValidator({
+        //submitButtons: '#postForm',
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },        
+        fields: {
+            firstName: {
+             message: 'The first name is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 30,
+                        message: 'The first name must be more than 1 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[A-z]+$/,
+                        message: 'The first name can only accept alphabetical input'
+                    },
+                }
+            },
+            lastName: {
+                message: 'Last Name is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Last Name is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 30,
+                        message: 'Last Name must be more than 1 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[A-z]+$/,
+                        message: 'Last Names can only consist of alphabetical characters'
+                    },
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The email address is not a valid'
+                    }
+                }
+            },
+            address: {
+                message: 'Address is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Address is required and cannot be empty'
+                    }
+                }
+            }, 
 
-function doGet(e){
-  return handleResponse(e);
-}
+        }
+    })
+    .on('success.form.bv', function(e) {
+        // Prevent form submission
+        e.preventDefault();
 
-// Usage
-//  1. Enter sheet name where data is to be written below
-        var SHEET_NAME = "Sheet1";
-        
-//  2. Run > setup
-//
-//  3. Publish > Deploy as web app 
-//    - enter Project Version name and click 'Save New Version' 
-//    - set security level and enable service (most likely execute as 'me' and access 'anyone, even anonymously) 
-//
-//  4. Copy the 'Current web app URL' and post this in your form/script action 
-//
-//  5. Insert column names on your destination sheet matching the parameter names of the data you are passing in (exactly matching case)
+        // Get the form instance
+        var $form = $(e.target);
 
-var SCRIPT_PROP = PropertiesService.getScriptProperties(); // new property service
+        // Get the BootstrapValidator instance
+        var bv = $form.data('bootstrapValidator');
 
-// If you don't want to expose either GET or POST methods you can comment out the appropriate function
-
-
-function doPost(e){
-  return handleResponse(e);
-}
-
-function handleResponse(e) {
-  // shortly after my original solution Google announced the LockService[1]
-  // this prevents concurrent access overwritting data
-  // [1] http://googleappsdeveloper.blogspot.co.uk/2011/10/concurrency-and-google-apps-script.html
-  // we want a public lock, one that locks for all invocations
-  var lock = LockService.getPublicLock();
-  lock.waitLock(30000);  // wait 30 seconds before conceding defeat.
-  
-  try {
-    // next set where we write the data - you could write to multiple/alternate destinations
-    var doc = SpreadsheetApp.openById(SCRIPT_PROP.getProperty("key"));
-    var sheet = doc.getSheetByName(SHEET_NAME);
-    
-    // we'll assume header is in row 1 but you can override with header_row in GET/POST data
-    var headRow = e.parameter.header_row || 1;
-    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    var nextRow = sheet.getLastRow()+1; // get next row
-    var row = []; 
-    // loop through the header columns
-    for (i in headers){
-      if (headers[i] == "Timestamp"){ // special case if you include a 'Timestamp' column
-        row.push(new Date());
-      } else { // else use header name to get data
-        row.push(e.parameter[headers[i]]);
-      }
-    }
-    // more efficient to set values as [][] array than individually
-    sheet.getRange(nextRow, 1, 1, row.length).setValues([row]);
-    // return json success results
-    return ContentService
-          .createTextOutput(JSON.stringify({"result":"success", "row": nextRow}))
-          .setMimeType(ContentService.MimeType.JSON);
-  } catch(e){
-    // if error return this
-    return ContentService
-          .createTextOutput(JSON.stringify({"result":"error", "error": e}))
-          .setMimeType(ContentService.MimeType.JSON);
-  } finally { //release lock
-    lock.releaseLock();
-  }
-}
-
-function setup() {
-    var doc = SpreadsheetApp.getActiveSpreadsheet();
-    SCRIPT_PROP.setProperty("key", doc.getId());
-}
+        // Use Ajax to submit form data
+        var url = 'https://script.google.com/macros/u/0/s/AKfycbyZUL4zVxjKRRXiemn62gr8cI4f7rGzIsNTYnu11eou19kepS4/exec';
+        var redirectUrl = 'success-page.html';
+        // show the loading 
+        $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+        var jqxhr = $.post(url, $form.serialize(), function(data) {
+            console.log("Success! Data: " + data.statusText);
+            $(location).attr('href',redirectUrl);
+        })
+            .fail(function(data) {
+                console.warn("Error! Data: " + data.statusText);
+                // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
+                if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                    //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+                    $(location).attr('href',redirectUrl);                
+                }
+            });
+    });
+});

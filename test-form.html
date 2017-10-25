@@ -24,19 +24,13 @@
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-  action="https://script.google.com/macros/u/0/s/AKfycbzYXL4WyP-C1HdQPloWKRMO_GqiOGycITOeZtZdC4Zlm3detxsL/exec">
+  action="https://contact-to-akndmr.herokuapp.com">
       
     <!-- change the form action to your script url -->
 
     <fieldset class="pure-group">
       <label for="name">Name: </label>
       <input id="name" name="name" placeholder="What your Mom calls you" />
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="10"
-      placeholder="Tell us what's on your mind..."></textarea>
     </fieldset>
 
     <fieldset class="pure-group">
@@ -48,12 +42,18 @@
     </fieldset>
 
     <fieldset class="pure-group">
-      <label for="color">Favourite Color: </label>
-      <input id="color" name="color" placeholder="green" />
+      <label for="subject">Favourite Color: </label>
+      <input id="subject" name="subject" placeholder="Subject" />
     </fieldset>
+    
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>  
+      
 
-    <button class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    <input class="button-success pure-button button-xlarge" type="submit" name="submit" value="Submit" />
 
   </form>
 

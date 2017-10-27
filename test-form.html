@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <title>Contact Form</title>
 </head>
 
@@ -16,6 +17,8 @@
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
+    <div id="contactResponse"></div>
+    
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://contact-to-akndmr.herokuapp.com/controller.php">
       
@@ -56,6 +59,44 @@
       We will get back to you soon!</h2>
   </div>
 
+    
+    <!-- Post form data  with jQuery-->
+    <script>
+     $("#gform").submit(function(event) 
+     {
+         /* stop form from submitting normally */
+         event.preventDefault();
+
+         /* get some values from elements on the page: */
+         var $form = $( this ),
+             $submit = $form.find( 'button[type="submit"]' ),
+             name_value = $form.find( 'input[name="name"]' ).val(),
+             email_value = $form.find( 'input[name="email"]' ).val(),
+             subject_value = $form.find( 'input[name="subject"]' ).val(),
+             message_value = $form.find( 'textarea[name="message"]' ).val(),
+             url = $form.attr('action');
+
+         /* Send the data using post */
+         var posting = $.post( url, { 
+                           name: name_value, 
+                           email: email_value,
+                           subject: subject_value, 
+                           message: message_value 
+                       });
+
+         posting.done(function( data )
+         {
+             /* Put the results in a div */
+             $( "#contactResponse" ).html(data);
+
+             /* Change the button text. */
+             $submit.text('Sent, Thank you');
+
+             /* Disable the button. */
+             $submit.attr("disabled", true);
+         });
+    });
+</script>
 
 </body>
 </html>

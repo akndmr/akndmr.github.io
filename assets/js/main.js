@@ -40,7 +40,7 @@ function loadProjectsHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/2f89333cd2be5c96b9ca36182aac4401/raw/ede3824abab9c8a7fd2768bef53b4f0ddb66d155/projects.html", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/2f89333cd2be5c96b9ca36182aac4401/raw/12df8e8f26625ed59d81546b108d0f3960767619/projects.html", true);
   xmlhttp.send();
 }
 

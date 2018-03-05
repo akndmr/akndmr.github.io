@@ -105,9 +105,9 @@ function myFunction(xhr) {
 function noPlayStoreYet() {
   swal({
 				  title: 'Hey there!',
-				  text: 'I don\'t have a Play Store Developer account yet.'+ 
-	  				'Once, I create, I\'ll update this.'+
-	  				'\n <img src="https://unsplash.com/photos/5Ntkpxqt54Y" style="width:400px;"/>',
-	  			  html: true
+				  text: 'I don\'t have a Play Store Developer account yet',
+				  imageUrl: 'https://unsplash.com/photos/5Ntkpxqt54Y',
+			 	  imageHeight: 400,
+			 	  imageAlt: 'A tall image'
 				});
 } 

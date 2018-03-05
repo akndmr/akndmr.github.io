@@ -101,4 +101,15 @@ function myFunction(xhr) {
   document.getElementById("main").innerHTML = formHTML;
 }
 
-
+/******************************** SWEET-ALERT */
+function noPlayStoreYet() {
+  swal({
+				  title: 'Hey there!',
+				  text: 'Thank you for visiting! Site is under construction. Will be ready in few days! Have a lovely day!',
+				  imageUrl: 'https://unsplash.com/photos/5Ntkpxqt54Y',
+				  imageWidth: 400,
+				  imageHeight: 200,
+				  imageAlt: 'Credits: Sai Kiran Anagani from Unsplash.com',
+				  animation: false
+				});
+} 

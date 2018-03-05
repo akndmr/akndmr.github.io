@@ -1294,3 +1294,44 @@ a span.icon-center{
     	margin:auto;
     }
 }
+
+
+/* Buttons */
+ul.icons li button {
+					text-decoration: none;
+					position: relative;
+					display: block;
+					width: 2.75em;
+					height: 2.75em;
+					border-radius: 100%;
+					border: solid 1px #bdc3c7;
+					line-height: 2.75em;
+					overflow: hidden;
+					text-align: center;
+					text-indent: 2.75em;
+					white-space: nowrap;
+				}
+
+					ul.icons li button:before {
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-font-smoothing: antialiased;
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						text-transform: none !important;
+						color: #bdc3c7;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: inherit;
+						height: inherit;
+						font-size: 1.35rem;
+						line-height: inherit;
+						text-align: center;
+						text-indent: 0;
+					}
+
+					ul.icons li button:hover {						
+						color: #ff7996;
+						border-color: #ff7996;
+					}

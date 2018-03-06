@@ -105,9 +105,13 @@ function myFunction(xhr) {
 function noPlayStoreYet() {
   swal({
 				  title: 'Hey there!',
-				  text: 'I don\'t have a Play Store Developer account yet',
-				  imageUrl: 'https://unsplash.com/photos/5Ntkpxqt54Y',
-			 	  imageHeight: 400,
-			 	  imageAlt: 'A tall image'
+				  text: 'Sorry, I\'ll add Play Store account soon!'
+				});
+} 
+
+function noResumeYet() {
+  swal({
+				  title: 'Hey there!',
+				  text: 'Sorry, I\'ll attach my resume soon!'
 				});
 } 

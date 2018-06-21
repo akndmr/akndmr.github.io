@@ -23,7 +23,7 @@ function loadExperiencesHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/81fbb5f213ce5b90428456e8c4dca4c0/raw/3a7e303b6b481ba2683207bd60d84a3db54cd37c/experiences.html", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/81fbb5f213ce5b90428456e8c4dca4c0/raw/41a66ab92e22abbe1e22a7f2b4db72d777458c7f/experiences.html", true);
   xmlhttp.send();
 }
 

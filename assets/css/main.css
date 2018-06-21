@@ -1349,6 +1349,6 @@ ul.icons li button {
 }
 
 .form_submit:hover{
-  color: #FFFFFF; 
+  color: #FFFFFF !important; 
 }
 

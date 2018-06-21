@@ -6,7 +6,7 @@ function loadFormHTML() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/e88aad3398bfc2a82d9396368bd31abb/raw/e739a178104cc3dca1f08f94486d1c8396cb75ec/form.html", true);
+  xmlhttp.open("GET", "https://gist.githubusercontent.com/akndmr/e88aad3398bfc2a82d9396368bd31abb/raw/13c95473ee099e8552b1fb0fe4f0466901f1f166/form.html", true);
   xmlhttp.send();
 }
 

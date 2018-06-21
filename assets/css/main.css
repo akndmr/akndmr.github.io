@@ -126,7 +126,7 @@
 
 	body, input, select, textarea {
 		color: #414f57;
-		font-family: Arial, sans-serif;
+		font-family: Ubuntu, sans-serif;
 		font-size: 14pt;
 		line-height: 2;
 		letter-spacing: 0.2em;
@@ -934,7 +934,7 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  font-family: Arial;
+  font-family: Ubuntu;
   color: #bdc3c7;
   font-size: 12px;
   padding: 20px 20px 20px 20px;

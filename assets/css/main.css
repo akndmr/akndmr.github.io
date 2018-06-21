@@ -1335,3 +1335,16 @@ ul.icons li button {
 						color: #ff7996;
 						border-color: #ff7996;
 					}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ECECEC;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ECECEC;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ECECEC;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ECECEC;
+}

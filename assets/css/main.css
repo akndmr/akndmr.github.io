@@ -934,16 +934,15 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  font-family: Ubuntu;
   color: #bdc3c7;
-  font-size: 12px;
   padding: 20px 20px 20px 20px;
   border: solid #bdc3c7 2px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #ff7996;
+  background: #ff7996; 
+	color: #ffffff;
   text-decoration: none;
 }
 

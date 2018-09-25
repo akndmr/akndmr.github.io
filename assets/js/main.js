@@ -101,6 +101,10 @@ function myFunction(xhr) {
   document.getElementById("main").innerHTML = formHTML;
 }
 
+function downloadResume(){
+	window.open('https://github.com/akndmr/akndmr.github.io/raw/master/files/AKIN_Github_Resume.pdf');
+}
+
 /******************************** SWEET-ALERT */
 function noPlayStoreYet() {
   swal({
@@ -115,3 +119,5 @@ function noResumeYet() {
 				  text: 'Sorry, I\'ll attach my resume soon!'
 				});
 } 
+
+

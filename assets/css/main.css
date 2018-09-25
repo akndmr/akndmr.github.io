@@ -942,7 +942,8 @@
 
 .btn:hover {
   background: #ff7996; 
-	color: #ffffff;
+  font-family: Ubuntu;
+  color: #ffffff !important;
   text-decoration: none;
 }
 

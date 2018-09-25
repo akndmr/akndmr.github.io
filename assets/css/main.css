@@ -709,7 +709,7 @@
 		button:hover,
 		.button:hover {
 			border-color: #ff7496;
-			color: #ffffff !important;
+			color: #ff7496 !important;
 		}
 
 		input[type="submit"].icon,

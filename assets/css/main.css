@@ -1308,6 +1308,12 @@ ul.icons li a:hover{
 }
 
 
+ul.icons li a i{
+	text-align:center;
+      	color:#bdc3c7;
+      	font-size:14px;
+}
+
 /* Buttons */
 ul.icons li button {
 					text-decoration: none;

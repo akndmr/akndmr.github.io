@@ -1311,6 +1311,7 @@ ul.icons li a{
 ul.icons li a:hover{
 	background-color: #F6F7F2;
     	color: #ff7496;
+	text-decoration: none;
 }
 
 

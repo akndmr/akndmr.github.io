@@ -1295,6 +1295,17 @@ a span.icon-center{
 }
 
 
+/* Footer links */
+ul.icons li a{
+	color: #bdc3c7;
+}
+
+ul.icons li a:hover{
+	background-color: #F6F7F2;
+    	color: #ff7496;
+}
+
+
 /* Buttons */
 ul.icons li button {
 					text-decoration: none;

@@ -1027,6 +1027,7 @@ li.main-menu {
     border-bottom: 1px solid #bdc3c7;
     text-transform: uppercase !important;
     line-height: 40px;	
+    height: 40px;
 }
 
 li.main-menu:last-child {

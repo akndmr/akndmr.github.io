@@ -1295,7 +1295,7 @@ a span.icon-center{
 
 /* Footer links */
 ul.icons li a{
-	display: block;
+	/*display: block;*/
 	color: #bdc3c7;
 	text-decoration: none;
 }
@@ -1310,6 +1310,10 @@ ul.icons li a i{
 	text-align:center;
       	color:#bdc3c7;
       	font-size:14px;
+}
+
+ul.icons li a i:hover{
+      	color:#ff7496;
 }
 
 /* Buttons */

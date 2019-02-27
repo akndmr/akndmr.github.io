@@ -518,6 +518,8 @@
 			}
 
 				ul.icons li a {
+					
+					font-family: FontAwesome;
 					text-decoration: none;
 					position: relative;
 					display: block;
@@ -533,20 +535,11 @@
 				}
 
 					ul.icons li a:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						 font-family: FontAwesome;
+				
 						font-style: normal;
 						font-weight: normal;
 						text-transform: none !important;
 						color: #bdc3c7;
-					}
-
-					ul.icons li a:before {
-						
-					}
-
-					ul.icons li a:before {
 						position: absolute;
 						top: 0;
 						left: 0;
@@ -558,10 +551,9 @@
 						text-indent: 0;
 					}
 
-					ul.icons li a:hover {						
+					ul.icons li a:hover {		
+						border-color:  #ff7996;										
 						color: #ff7996 !important;
-						border-color:  #ff7996;
-						background-color: #ff7996;
 					}
 					
 					footer .fa-github:hover {						

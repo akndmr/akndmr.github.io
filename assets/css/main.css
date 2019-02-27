@@ -1058,6 +1058,8 @@ li.links{
 li.links a {
     text-decoration: none;
     display: block;
+    width: 2.75em;
+    height: 2.75em;
     border-radius: 100%;
     border: solid 1px #bdc3c7;
     color: #bdc3c7;

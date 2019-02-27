@@ -519,7 +519,7 @@
 
 				ul.icons li a {
 					
-					font-family: FontAwesome;
+					/* font-family: FontAwesome;*/
 					text-decoration: none;
 					position: relative;
 					display: block;

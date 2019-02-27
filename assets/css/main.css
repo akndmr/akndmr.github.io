@@ -560,7 +560,8 @@
 
 					ul.icons li a:hover {						
 						color: #ff7996 !important;
-						border-color: #ff7996;
+						border-color:  #ff7996;
+						background-color: #ff7996;
 					}
 					
 					footer .fa-github:hover {						

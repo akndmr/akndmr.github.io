@@ -1041,7 +1041,7 @@ li.main-menu a.active {
 }
 
 li.main-menu a:hover:not(.active) {
-    background-color: #F6F7F2;
+    /*background-color: #F6F7F2;*/
     color: #ff7496;
 }			
 

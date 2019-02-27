@@ -1043,7 +1043,7 @@ li.main-menu a:hover:not(.active) {
 /* FOOTER LINKS 2 */
 li.links{
     display: inline-block;
-    padding: 0.5em 1.5em;
+    padding: 2em 2em;
     height: 40px;
     line-height: 40px;
 }
@@ -1065,6 +1065,7 @@ li.links a.active {
 li.links a:hover:not(.active) {
     /*background-color: #F6F7F2;*/
     color: #ff7496;
+    border-color: #ff7496;
 }
 
 

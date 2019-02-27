@@ -1004,14 +1004,6 @@ ul.main-menu-list {
     background-color: #FEFEFE;
 }
 
-li.main-menu a {
-    display: block;
-    color: #bdc3c7;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-
 li.main-menu {
     text-align: left;
     border-bottom: 1px solid #bdc3c7;
@@ -1025,6 +1017,13 @@ li.main-menu:last-child {
     border-bottom: none;
 }
 
+li.main-menu a {
+    display: block;
+    color: #bdc3c7;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
 li.main-menu a.active {
     background-color: #4CAF50;
     color: white;
@@ -1034,6 +1033,26 @@ li.main-menu a:hover:not(.active) {
     /*background-color: #F6F7F2;*/
     color: #ff7496;
 }			
+
+/* FOOTER LINKS 2 */
+li.links a {
+    text-decoration: none;
+    display: block;
+    border-radius: 100%;
+    border: solid 1px #bdc3c7;
+    color: #bdc3c7;
+    text-align: center;
+}
+
+li.links a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li.links a:hover:not(.active) {
+    /*background-color: #F6F7F2;*/
+    color: #ff7496;
+}
 
 
 /* EXPERINCES */

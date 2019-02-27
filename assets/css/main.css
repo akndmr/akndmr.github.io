@@ -1045,6 +1045,7 @@ ul.links-list{
      cursor: default;
      list-style: none;
      padding-left: 0;
+     margin-top: -0.675em;
 }
 
 li.links{
@@ -1060,6 +1061,7 @@ li.links a {
     display: block;
     width: 2.75em;
     height: 2.75em;
+    line-height: 2.75em;
     border-radius: 100%;
     border: solid 1px #bdc3c7;
     color: #bdc3c7;

@@ -510,16 +510,18 @@
 			margin-top: -0.675em;
 		}
 
+/*
 			ul.icons li {
 				display: inline-block;
 				padding: 0.5em 1.5em;
 				height: 40px;
     				line-height: 40px;
 			}
-
+*/
+/*
 				ul.icons li a {
 					
-					/* font-family: FontAwesome;*/
+					font-family: FontAwesome;
 					text-decoration: none;
 					position: relative;
 					display: block;
@@ -533,7 +535,8 @@
 					text-indent: 2.75em;
 					white-space: nowrap;
 				}
-
+*/
+/*
 					ul.icons li a:before {
 				
 						font-style: normal;
@@ -550,12 +553,15 @@
 						text-align: center;
 						text-indent: 0;
 					}
-
+*/
+/*
 					ul.icons li a:hover {		
 						border-color:  #ff7996;										
 						color: #ff7996 !important;
 					}
 					
+*/
+
 					footer .fa-github:hover {						
 						color: #ff7996 !important;
 						border-color: #ff7996;

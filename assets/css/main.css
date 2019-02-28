@@ -1058,7 +1058,6 @@ li.links{
 
 
 li.links a {
-    text-decoration: none;
     position: relative;
     display: block;
     width: 2.75em;
@@ -1070,7 +1069,6 @@ li.links a {
     text-align: center;
     text-indent: 2.75em; 
     overflow: hidden; 
-    white-space: nowrap;
 }
 
 li.links a.active {

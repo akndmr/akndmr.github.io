@@ -1056,21 +1056,6 @@ li.links{
 	
 }
 
-li.links a:before{
-	font-style: normal;
-	font-weight: normal;
-	text-transform: none !important;
-	color: #bdc3c7;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: inherit;
-	height: inherit;
-	font-size: 1.35rem;
-	line-height: inherit;
-	text-align: center;
-    	text-indent: 0;
-}
 
 li.links a {
     text-decoration: none;

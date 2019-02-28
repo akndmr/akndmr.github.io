@@ -1053,10 +1053,28 @@ li.links{
     width: 2.75em;	
     line-height: 2.75em;
     text-align: center;
+	
+}
+
+li.links a:before{
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+	color: #bdc3c7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	font-size: 1.35rem;
+	line-height: inherit;
+	text-align: center;
+    	text-indent: 0;
 }
 
 li.links a {
     text-decoration: none;
+    position: relative;
     display: block;
     width: 2.75em;
     height: 2.75em;
@@ -1065,6 +1083,9 @@ li.links a {
     border: solid 1px #bdc3c7;
     color: #bdc3c7;
     text-align: center;
+    text-indent: 2.75em; 
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
 li.links a.active {

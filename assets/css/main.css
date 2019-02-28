@@ -1058,7 +1058,7 @@ li.links{
 
 
 li.links a {
-    position: relative;
+    /*position: relative;*/
     display: block;
     width: 2.75em;
     height: 2.75em;
@@ -1067,7 +1067,7 @@ li.links a {
     border: solid 1px #bdc3c7;
     color: #bdc3c7;
     text-align: center;
-    text-indent: 2.75em; 
+    /*text-indent: 2.75em; */
     overflow: hidden; 
 }
 

@@ -1042,11 +1042,11 @@ li.main-menu a:hover:not(.active) {
 
 /* FOOTER LINKS 2 */
 ul.links-list{
+     width: 300px;
      cursor: default;
      list-style: none;
      padding-left: 0;
-     margin-left: 0;
-     margin-top: -0.675em;
+     margin: -0.675em auto;
 }
 
 li.links{
